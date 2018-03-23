@@ -1,7 +1,8 @@
 //
-//  ScanViewController.swift
-//  ToBeer
+//  ScanBarCodeViewController.swift
+//  myToBeer
 //
+<<<<<<< HEAD
 //  Created by Seo JaeHyeong on 23/03/2018.
 //  Copyright © 2018 Seo Jaehyeong. All rights reserved.
 /*
@@ -13,6 +14,11 @@
  
  }
  */
+=======
+//  Created by Himchan Park on 2018. 3. 24..
+//  Copyright © 2018년 Himchan Park. All rights reserved.
+//
+>>>>>>> 7d5420e1eba4efd424070e98529f7406631657d2
 
 import UIKit
 import AVFoundation

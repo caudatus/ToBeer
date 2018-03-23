@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+struct BeerModel {
+   
+   var name: String = ""
+   var company: String = ""
+   var alcohol: String = ""
+   
+   var barcode: String = ""
+   var type: String = ""
+   
+   var image: String = ""
+   var feeling: [String] = []
+   
+   var nation: String = ""
+   
+}
