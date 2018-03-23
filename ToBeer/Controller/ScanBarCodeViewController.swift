@@ -16,6 +16,7 @@ class ScanBarCodeViewController: UIViewController {
     var previewLayer: AVCaptureVideoPreviewLayer?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         let videoOrientation: AVCaptureVideoOrientation
         print("view did load")
@@ -25,7 +26,7 @@ class ScanBarCodeViewController: UIViewController {
         imgView.isUserInteractionEnabled = false
         
         barcodeView = UIView()
-        barcodeView.frame = CGRect(x: 143, y: 327, width: 124, height: 200)
+        barcodeView.frame = CGRect(x: 140, y: 327, width: 126, height: 200)
         
         cameraOpen()
         
@@ -55,15 +56,17 @@ class ScanBarCodeViewController: UIViewController {
         let input = try? AVCaptureDeviceInput(device: device!)
         
         if self.captureSession.canAddInput(input!) {
+            print("canAddInput")
             self.captureSession.addInput(input!)
         }
         
         self.previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         if let videoPreviewLayer = self.previewLayer {
+            print("videoPreviewLayer")
             
             //            let videoPreviewRect = videoPreviewLayer.layerRectConverted(fromMetadataOutputRect: ).standardized
             
-            videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspect
+            videoPreviewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
             videoPreviewLayer.frame = barcodeView.bounds
             
             barcodeView.layer.addSublayer(videoPreviewLayer)
@@ -76,10 +79,11 @@ class ScanBarCodeViewController: UIViewController {
         
         let metadataOutput = AVCaptureMetadataOutput()
         if self.captureSession.canAddOutput(metadataOutput) {
+            print("canAddOutput")
             self.captureSession.addOutput(metadataOutput)
             
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.ean13, AVMetadataObject.ObjectType.qr]
+            metadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.ean13, AVMetadataObject.ObjectType.ean8, AVMetadataObject.ObjectType.qr]
             
             
         }

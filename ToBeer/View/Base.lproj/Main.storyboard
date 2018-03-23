@@ -138,14 +138,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일본 🇯🇵" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-W7-pnm">
-                                <rect key="frame" x="123" y="403" width="218" height="21.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="123" y="405.33333333333331" width="218" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9%" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-iI-KQM">
-                                <rect key="frame" x="123" y="434" width="218" height="21.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <rect key="frame" x="123" y="436.33333333333331" width="218" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -180,7 +180,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="#황금빛" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SM-eb-bpX">
-                                        <rect key="frame" x="130" y="47" width="108" height="29"/>
+                                        <rect key="frame" x="130" y="47" width="130" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                         <color key="textColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,21 +203,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="기린 이치방은 첫 번째 맥즙만을 사용하여 보리 본연의 진한 맛을 충분히 느낄 수 있고, 깔끔한 맛이 특징이다." translatesAutoresizingMaskIntoConstraints="NO" id="nIt-9K-EmK">
-                                <rect key="frame" x="123" y="465" width="218" height="78"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="기린 이치방은 첫 번째 맥즙만을 사용하여 보리 본연의 진한 맛을 충분히 느낄 수 있고, 깔끔한 맛이 특징이다." adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIt-9K-EmK">
+                                <rect key="frame" x="123" y="467.33333333333326" width="218" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="78" id="jN9-2L-oW4"/>
+                                    <constraint firstAttribute="height" constant="92" id="mlX-Jf-XlT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라거" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qU8-hL-Iv4">
-                                <rect key="frame" x="123" y="373" width="218" height="21.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCT-NA-eTb">
                                 <rect key="frame" x="20" y="25" width="60" height="31"/>
                                 <constraints>
@@ -229,6 +223,12 @@
                                     <segue destination="LZQ-2m-9cH" kind="show" id="bpt-NR-CQu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="라거" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qU8-hL-Iv4">
+                                <rect key="frame" x="123" y="373" width="218" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -293,15 +293,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw8-8n-R0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278" y="33"/>
+            <point key="canvasLocation" x="2275.36231884058" y="32.608695652173914"/>
         </scene>
     </scenes>
     <resources>
-        <image name="barcodeCameraImage" width="414" height="736"/>
-        <image name="ffd479-barcode-256" width="256" height="256"/>
+        <image name="barcodeCameraImage" width="207" height="368"/>
+        <image name="ffd479-barcode-256" width="85" height="85"/>
         <image name="homeImage" width="1813" height="1209"/>
         <image name="sampleBeer" width="190" height="348"/>
-        <image name="white-barcode-256" width="256" height="256"/>
+        <image name="white-barcode-256" width="85" height="85"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bpt-NR-CQu"/>
