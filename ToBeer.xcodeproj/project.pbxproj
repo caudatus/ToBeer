@@ -15,6 +15,8 @@
 		FECC1ECB2065421B00235CD7 /* ScanBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECA2065421B00235CD7 /* ScanBarCodeViewController.swift */; };
 		FECC1ECD206542B000235CD7 /* DiscoverdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECC206542B000235CD7 /* DiscoverdViewController.swift */; };
 		FECC1ED0206542F100235CD7 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECF206542F100235CD7 /* BeerModel.swift */; };
+		FECC1ED52065592800235CD7 /* BearBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ED42065592800235CD7 /* BearBase.swift */; };
+		FECC1ED7206559CC00235CD7 /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ED6206559CC00235CD7 /* Bear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FECC1ECA2065421B00235CD7 /* ScanBarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBarCodeViewController.swift; sourceTree = "<group>"; };
 		FECC1ECC206542B000235CD7 /* DiscoverdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverdViewController.swift; sourceTree = "<group>"; };
 		FECC1ECF206542F100235CD7 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		FECC1ED42065592800235CD7 /* BearBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearBase.swift; sourceTree = "<group>"; };
+		FECC1ED6206559CC00235CD7 /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +69,7 @@
 				FECC1ECE206542CF00235CD7 /* Controller */,
 				FECC1ED22065430C00235CD7 /* View */,
 				FECC1EBF206541A600235CD7 /* Assets.xcassets */,
-				FECC1ED32065431C00235CD7 /* Supporting Files */,
+				FECC1EC4206541A600235CD7 /* Info.plist */,
 			);
 			path = ToBeer;
 			sourceTree = "<group>";
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				FECC1ECF206542F100235CD7 /* BeerModel.swift */,
+				FECC1ED42065592800235CD7 /* BearBase.swift */,
+				FECC1ED6206559CC00235CD7 /* Bear.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,14 +101,6 @@
 				FECC1EBC206541A600235CD7 /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FECC1ED32065431C00235CD7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FECC1EC4206541A600235CD7 /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECC1ED52065592800235CD7 /* BearBase.swift in Sources */,
 				FECC1EBB206541A600235CD7 /* MainViewController.swift in Sources */,
 				FECC1EB9206541A600235CD7 /* AppDelegate.swift in Sources */,
 				FECC1ECD206542B000235CD7 /* DiscoverdViewController.swift in Sources */,
+				FECC1ED7206559CC00235CD7 /* Bear.swift in Sources */,
 				FECC1ED0206542F100235CD7 /* BeerModel.swift in Sources */,
 				FECC1ECB2065421B00235CD7 /* ScanBarCodeViewController.swift in Sources */,
 			);
@@ -319,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ZS2532XM8;
+				DEVELOPMENT_TEAM = E9R36XSN8N;
 				INFOPLIST_FILE = ToBeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;
@@ -334,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3ZS2532XM8;
+				DEVELOPMENT_TEAM = E9R36XSN8N;
 				INFOPLIST_FILE = ToBeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;

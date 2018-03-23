@@ -21,5 +21,6 @@ struct BeerModel {
    var feeling: [String] = []
    
    var nation: String = ""
+   var description: String = ""
    
 }

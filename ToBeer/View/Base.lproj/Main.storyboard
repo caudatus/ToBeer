@@ -27,22 +27,27 @@
                             <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage" translatesAutoresizingMaskIntoConstraints="NO" id="QLi-WT-zYT">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGZ-ih-IAf">
-                                <rect key="frame" x="157" y="482" width="100" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGZ-ih-IAf">
+                                <rect key="frame" x="127" y="408" width="160" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="5Yp-Wa-nP3"/>
+                                    <constraint firstAttribute="width" constant="160" id="xeh-tx-Fng"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <state key="normal" title="바코드">
+                                <state key="normal" image="white-barcode-256">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="actionToBarcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNG-vY-WLQ"/>
-                                    <segue destination="Zqp-jU-Dkd" kind="show" id="daI-Te-CZ5"/>
+                                    <segue destination="LZQ-2m-9cH" kind="show" id="0R6-PO-fGX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QLi-WT-zYT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="49d-F9-rma"/>
+                            <constraint firstItem="uGZ-ih-IAf" firstAttribute="centerX" secondItem="QLi-WT-zYT" secondAttribute="centerX" id="5OK-qS-m0s"/>
+                            <constraint firstItem="uGZ-ih-IAf" firstAttribute="centerY" secondItem="QLi-WT-zYT" secondAttribute="centerY" constant="100" id="9vH-i3-sYD"/>
                             <constraint firstItem="QLi-WT-zYT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FjD-MC-fUt"/>
                             <constraint firstItem="QLi-WT-zYT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Jox-hb-nyT"/>
                             <constraint firstItem="QLi-WT-zYT" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QE1-0I-apA"/>
@@ -87,7 +92,7 @@
         <!--Discoverd View Controller-->
         <scene sceneID="Gvl-2L-Hs8">
             <objects>
-                <viewController id="Zqp-jU-Dkd" customClass="DiscoverdViewController" customModule="ToBeer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscoverdViewController" id="Zqp-jU-Dkd" customClass="DiscoverdViewController" customModule="ToBeer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UR4-OY-yET">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,9 +218,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCT-NA-eTb">
+                                <rect key="frame" x="20" y="25" width="60" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Di3-AQ-3QI"/>
+                                    <constraint firstAttribute="width" constant="60" id="tKK-MP-dZt"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="ffd479-barcode-256"/>
+                                <connections>
+                                    <segue destination="LZQ-2m-9cH" kind="show" id="bpt-NR-CQu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="RCT-NA-eTb" firstAttribute="leading" secondItem="RfX-qO-cZl" secondAttribute="leading" constant="20" id="2PE-il-0Xq"/>
                             <constraint firstItem="ran-lJ-Pli" firstAttribute="leading" secondItem="aOe-Ba-g8L" secondAttribute="leading" id="3JP-tZ-od5"/>
                             <constraint firstItem="Vrh-Un-zfR" firstAttribute="leading" secondItem="UR4-OY-yET" secondAttribute="leadingMargin" constant="53" id="3pF-Cg-nhP"/>
                             <constraint firstItem="byJ-qa-yQe" firstAttribute="leading" secondItem="RfX-qO-cZl" secondAttribute="leading" constant="30" id="5SN-hP-zvF"/>
@@ -235,6 +252,7 @@
                             <constraint firstItem="7tg-Wo-aog" firstAttribute="top" secondItem="aOe-Ba-g8L" secondAttribute="bottom" constant="8" id="Qs5-T1-GpC"/>
                             <constraint firstItem="aOe-Ba-g8L" firstAttribute="top" secondItem="Vrh-Un-zfR" secondAttribute="bottom" constant="13" id="RDs-hQ-Z0f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vrh-Un-zfR" secondAttribute="trailing" constant="53" id="RaA-41-E6W"/>
+                            <constraint firstItem="RCT-NA-eTb" firstAttribute="top" secondItem="UR4-OY-yET" secondAttribute="top" constant="25" id="Stq-Fk-uzz"/>
                             <constraint firstItem="RtM-iI-KQM" firstAttribute="leading" secondItem="qU8-hL-Iv4" secondAttribute="leading" id="UsP-XX-0Vx"/>
                             <constraint firstItem="RtM-iI-KQM" firstAttribute="trailing" secondItem="qU8-hL-Iv4" secondAttribute="trailing" id="WMb-RG-Y4C"/>
                             <constraint firstItem="RfX-qO-cZl" firstAttribute="trailing" secondItem="WiL-v5-aOX" secondAttribute="trailing" constant="124" id="Yus-Sq-SfB"/>
@@ -258,15 +276,34 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RfX-qO-cZl"/>
                     </view>
+                    <connections>
+                        <outlet property="beerAlcoholLb" destination="RtM-iI-KQM" id="3mi-b4-nYH"/>
+                        <outlet property="beerDescriptionLb" destination="nIt-9K-EmK" id="q5C-aV-WQK"/>
+                        <outlet property="beerFeeling1_Lb" destination="0ZH-Yz-cbl" id="xSo-bP-Roz"/>
+                        <outlet property="beerFeeling2_Lb" destination="F1B-v7-4e8" id="WAM-LN-SSC"/>
+                        <outlet property="beerFeeling3_Lb" destination="ytA-hO-TTa" id="39I-H6-8rN"/>
+                        <outlet property="beerFeeling4_Lb" destination="8SM-eb-bpX" id="lkf-DA-fs1"/>
+                        <outlet property="beerFeeling5_Lb" destination="N3Y-tc-oji" id="n8j-ga-pUb"/>
+                        <outlet property="beerImage" destination="WiL-v5-aOX" id="hzv-k1-UAC"/>
+                        <outlet property="beerNameLb" destination="oCt-YT-iEr" id="nFH-3l-gnm"/>
+                        <outlet property="beerNationLb" destination="ipd-W7-pnm" id="AQA-ZZ-PMH"/>
+                        <outlet property="beerTypeLb" destination="qU8-hL-Iv4" id="W44-EX-ir3"/>
+                        <outlet property="companyLb" destination="byJ-qa-yQe" id="EM9-UG-uWE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw8-8n-R0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2233.3333333333335" y="33.423913043478265"/>
+            <point key="canvasLocation" x="2278" y="33"/>
         </scene>
     </scenes>
     <resources>
         <image name="barcodeCameraImage" width="414" height="736"/>
+        <image name="ffd479-barcode-256" width="256" height="256"/>
         <image name="homeImage" width="1813" height="1209"/>
         <image name="sampleBeer" width="190" height="348"/>
+        <image name="white-barcode-256" width="256" height="256"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bpt-NR-CQu"/>
+    </inferredMetricsTieBreakers>
 </document>

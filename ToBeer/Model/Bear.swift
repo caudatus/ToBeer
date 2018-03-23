@@ -48,6 +48,7 @@ final class Bear {
             beerModel.image = beer.value["image"] as! String
             beerModel.feeling = beer.value["feeling"] as! [String]
             beerModel.nation = beer.value["nation"] as! String
+            beerModel.description = beer.value["description"] as! String
          }
       }
       

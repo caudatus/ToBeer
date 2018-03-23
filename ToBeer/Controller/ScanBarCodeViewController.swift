@@ -2,24 +2,6 @@
 //  ScanBarCodeViewController.swift
 //  myToBeer
 //
-<<<<<<< HEAD
-//  Created by Seo JaeHyeong on 23/03/2018.
-//  Copyright © 2018 Seo Jaehyeong. All rights reserved.
-/*
- // MARK: Handle Orientation Change
- 
- override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
- super.viewWillTransition(to: size, with: coordinator)
- 
- 
- }
- */
-=======
-//  Created by Himchan Park on 2018. 3. 24..
-//  Copyright © 2018년 Himchan Park. All rights reserved.
-//
->>>>>>> 7d5420e1eba4efd424070e98529f7406631657d2
-
 import UIKit
 import AVFoundation
 
@@ -36,7 +18,7 @@ class ScanBarCodeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let videoOrientation: AVCaptureVideoOrientation
-        
+        print("view did load")
         imgView = UIImageView()
         imgView.frame = view.bounds
         imgView.image = UIImage(named: "barcodeCameraImage")
@@ -67,6 +49,7 @@ class ScanBarCodeViewController: UIViewController {
     }
     
     func cameraOpen() {
+      print("cameraopen")
         captureSession.beginConfiguration()
         
         let input = try? AVCaptureDeviceInput(device: device!)
@@ -118,7 +101,7 @@ class ScanBarCodeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        
+        print("view disappear")
         captureSessionQueue.async {
             self.captureSession.stopRunning()
         }
@@ -131,13 +114,14 @@ extension ScanBarCodeViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         for metadata in metadataObjects {
             let readMetadata = metadata as! AVMetadataMachineReadableCodeObject
-            let code = readMetadata.stringValue
+            self.barcode = readMetadata.stringValue
             
-            let nextVC = storyboard?.instantiateViewController(withIdentifier: "DiscoverdViewController") as! DiscoverdViewController
-            nextVC.inputBarcode = code
-            self.present(nextVC, animated: true)
-            
+            break
         }
+      let nextVC = storyboard?.instantiateViewController(withIdentifier: "DiscoverdViewController") as! DiscoverdViewController
+      nextVC.inputBarcode = barcode
+      
+      self.present(nextVC, animated: true)
     }
 }
 
