@@ -16,7 +16,7 @@ struct BearBase {
                "4901880879884" : "YEBISU",
                "4901411175317" : "KIRIN",
                "4901004006714" : "ASAHI",
-               "50213085" : "GUINNESS",]
+               "50213085" : "GUINNESS"]
    
    let DATABASE = ["HEINEKEN" : [ "name" : "하이네켄",
                                   "company" : "Heineken Brew",
