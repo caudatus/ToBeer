@@ -81,12 +81,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKV-lj-o2t">
+                                <rect key="frame" x="142" y="328" width="130" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="WGK-6S-bEk"/>
+                                    <constraint firstAttribute="width" constant="130" id="rZj-4n-RP5"/>
+                                </constraints>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcodeCameraImage" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-au-bkV">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JKV-lj-o2t" firstAttribute="centerX" secondItem="udf-ZV-5aM" secondAttribute="centerX" id="9WN-l3-uV9"/>
+                            <constraint firstItem="JKV-lj-o2t" firstAttribute="centerY" secondItem="udf-ZV-5aM" secondAttribute="centerY" constant="60" id="GlY-d5-GGY"/>
                             <constraint firstItem="Zol-vb-xXd" firstAttribute="bottom" secondItem="4bh-au-bkV" secondAttribute="bottom" id="Jqv-mR-f9v"/>
                             <constraint firstItem="Zol-vb-xXd" firstAttribute="trailing" secondItem="4bh-au-bkV" secondAttribute="trailing" id="bDL-RE-3a6"/>
                             <constraint firstItem="4bh-au-bkV" firstAttribute="leading" secondItem="Zol-vb-xXd" secondAttribute="leading" id="gER-F9-pbo"/>
@@ -94,6 +104,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zol-vb-xXd"/>
                     </view>
+                    <connections>
+                        <outlet property="barcodeView" destination="JKV-lj-o2t" id="3YK-Ez-bZn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfG-8a-WuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,6 +327,6 @@
         <image name="white-barcode-256" width="85" height="85"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0R6-PO-fGX"/>
+        <segue reference="bpt-NR-CQu"/>
     </inferredMetricsTieBreakers>
 </document>
