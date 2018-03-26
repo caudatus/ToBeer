@@ -81,20 +81,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JKV-lj-o2t">
-                                <rect key="frame" x="142" y="328" width="130" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="WGK-6S-bEk"/>
-                                    <constraint firstAttribute="width" constant="130" id="rZj-4n-RP5"/>
-                                </constraints>
-=======
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2N-Ym-mlz">
                                 <rect key="frame" x="141" y="330" width="128" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
->>>>>>> 999cb54e5917b4654bdd8e8e72d080b5dc8eb9cb
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcodeCameraImage" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-au-bkV">
                                 <rect key="frame" x="0.0" y="20" width="414" height="716"/>
@@ -112,11 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="Zol-vb-xXd"/>
                     </view>
                     <connections>
-<<<<<<< HEAD
-                        <outlet property="barcodeView" destination="JKV-lj-o2t" id="3YK-Ez-bZn"/>
-=======
                         <outlet property="barcodeView" destination="t2N-Ym-mlz" id="jR2-JZ-On8"/>
->>>>>>> 999cb54e5917b4654bdd8e8e72d080b5dc8eb9cb
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SfG-8a-WuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
