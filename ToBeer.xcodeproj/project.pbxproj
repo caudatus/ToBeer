@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FECC1EB9206541A600235CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1EB8206541A600235CD7 /* AppDelegate.swift */; };
+		FECC1EBB206541A600235CD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1EBA206541A600235CD7 /* MainViewController.swift */; };
+		FECC1EBE206541A600235CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECC1EBC206541A600235CD7 /* Main.storyboard */; };
+		FECC1EC0206541A600235CD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECC1EBF206541A600235CD7 /* Assets.xcassets */; };
+		FECC1EC3206541A600235CD7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECC1EC1206541A600235CD7 /* LaunchScreen.storyboard */; };
+		FECC1ECB2065421B00235CD7 /* ScanBarCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECA2065421B00235CD7 /* ScanBarCodeViewController.swift */; };
+		FECC1ECD206542B000235CD7 /* DiscoverdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECC206542B000235CD7 /* DiscoverdViewController.swift */; };
+		FECC1ED0206542F100235CD7 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ECF206542F100235CD7 /* BeerModel.swift */; };
+		FECC1ED52065592800235CD7 /* BearBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ED42065592800235CD7 /* BearBase.swift */; };
+		FECC1ED7206559CC00235CD7 /* Bear.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1ED6206559CC00235CD7 /* Bear.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FECC1EB5206541A600235CD7 /* ToBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECC1EB8206541A600235CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FECC1EBA206541A600235CD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FECC1EBD206541A600235CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FECC1EBF206541A600235CD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FECC1EC2206541A600235CD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FECC1EC4206541A600235CD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECC1ECA2065421B00235CD7 /* ScanBarCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanBarCodeViewController.swift; sourceTree = "<group>"; };
+		FECC1ECC206542B000235CD7 /* DiscoverdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverdViewController.swift; sourceTree = "<group>"; };
+		FECC1ECF206542F100235CD7 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
+		FECC1ED42065592800235CD7 /* BearBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearBase.swift; sourceTree = "<group>"; };
+		FECC1ED6206559CC00235CD7 /* Bear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bear.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FECC1EB2206541A600235CD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FECC1EAC206541A600235CD7 = {
+			isa = PBXGroup;
+			children = (
+				FECC1EB7206541A600235CD7 /* ToBeer */,
+				FECC1EB6206541A600235CD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FECC1EB6206541A600235CD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FECC1EB5206541A600235CD7 /* ToBeer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FECC1EB7206541A600235CD7 /* ToBeer */ = {
+			isa = PBXGroup;
+			children = (
+				FECC1EB8206541A600235CD7 /* AppDelegate.swift */,
+				FECC1ED1206542F700235CD7 /* Model */,
+				FECC1ECE206542CF00235CD7 /* Controller */,
+				FECC1ED22065430C00235CD7 /* View */,
+				FECC1EBF206541A600235CD7 /* Assets.xcassets */,
+				FECC1EC4206541A600235CD7 /* Info.plist */,
+			);
+			path = ToBeer;
+			sourceTree = "<group>";
+		};
+		FECC1ECE206542CF00235CD7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FECC1EBA206541A600235CD7 /* MainViewController.swift */,
+				FECC1ECA2065421B00235CD7 /* ScanBarCodeViewController.swift */,
+				FECC1ECC206542B000235CD7 /* DiscoverdViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FECC1ED1206542F700235CD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FECC1ECF206542F100235CD7 /* BeerModel.swift */,
+				FECC1ED42065592800235CD7 /* BearBase.swift */,
+				FECC1ED6206559CC00235CD7 /* Bear.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FECC1ED22065430C00235CD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FECC1EC1206541A600235CD7 /* LaunchScreen.storyboard */,
+				FECC1EBC206541A600235CD7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FECC1EB4206541A600235CD7 /* ToBeer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECC1EC7206541A600235CD7 /* Build configuration list for PBXNativeTarget "ToBeer" */;
+			buildPhases = (
+				FECC1EB1206541A600235CD7 /* Sources */,
+				FECC1EB2206541A600235CD7 /* Frameworks */,
+				FECC1EB3206541A600235CD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToBeer;
+			productName = ToBeer;
+			productReference = FECC1EB5206541A600235CD7 /* ToBeer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FECC1EAD206541A600235CD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Seo Jaehyeong";
+				TargetAttributes = {
+					FECC1EB4206541A600235CD7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FECC1EB0206541A600235CD7 /* Build configuration list for PBXProject "ToBeer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FECC1EAC206541A600235CD7;
+			productRefGroup = FECC1EB6206541A600235CD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FECC1EB4206541A600235CD7 /* ToBeer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FECC1EB3206541A600235CD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECC1EC3206541A600235CD7 /* LaunchScreen.storyboard in Resources */,
+				FECC1EC0206541A600235CD7 /* Assets.xcassets in Resources */,
+				FECC1EBE206541A600235CD7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FECC1EB1206541A600235CD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECC1ED52065592800235CD7 /* BearBase.swift in Sources */,
+				FECC1EBB206541A600235CD7 /* MainViewController.swift in Sources */,
+				FECC1EB9206541A600235CD7 /* AppDelegate.swift in Sources */,
+				FECC1ECD206542B000235CD7 /* DiscoverdViewController.swift in Sources */,
+				FECC1ED7206559CC00235CD7 /* Bear.swift in Sources */,
+				FECC1ED0206542F100235CD7 /* BeerModel.swift in Sources */,
+				FECC1ECB2065421B00235CD7 /* ScanBarCodeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FECC1EBC206541A600235CD7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECC1EBD206541A600235CD7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FECC1EC1206541A600235CD7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECC1EC2206541A600235CD7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FECC1EC5206541A600235CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FECC1EC6206541A600235CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FECC1EC8206541A600235CD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 944595JNCH;
+				INFOPLIST_FILE = ToBeer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FECC1EC9206541A600235CD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 944595JNCH;
+				INFOPLIST_FILE = ToBeer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FECC1EB0206541A600235CD7 /* Build configuration list for PBXProject "ToBeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECC1EC5206541A600235CD7 /* Debug */,
+				FECC1EC6206541A600235CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECC1EC7206541A600235CD7 /* Build configuration list for PBXNativeTarget "ToBeer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECC1EC8206541A600235CD7 /* Debug */,
+				FECC1EC9206541A600235CD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FECC1EAD206541A600235CD7 /* Project object */;
+}
