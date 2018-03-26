@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -92,8 +93,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="JKV-lj-o2t" firstAttribute="centerX" secondItem="udf-ZV-5aM" secondAttribute="centerX" id="9WN-l3-uV9"/>
-                            <constraint firstItem="JKV-lj-o2t" firstAttribute="centerY" secondItem="udf-ZV-5aM" secondAttribute="centerY" constant="60" id="GlY-d5-GGY"/>
+                            <constraint firstAttribute="centerX" secondItem="udf-ZV-5aM" secondAttribute="centerX" id="9WN-l3-uV9"/>
                             <constraint firstItem="Zol-vb-xXd" firstAttribute="bottom" secondItem="4bh-au-bkV" secondAttribute="bottom" id="Jqv-mR-f9v"/>
                             <constraint firstItem="Zol-vb-xXd" firstAttribute="trailing" secondItem="4bh-au-bkV" secondAttribute="trailing" id="bDL-RE-3a6"/>
                             <constraint firstItem="4bh-au-bkV" firstAttribute="leading" secondItem="Zol-vb-xXd" secondAttribute="leading" id="gER-F9-pbo"/>
@@ -313,7 +313,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw8-8n-R0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273.913043478261" y="31.793478260869566"/>
+            <point key="canvasLocation" x="2201" y="32"/>
         </scene>
     </scenes>
     <resources>
