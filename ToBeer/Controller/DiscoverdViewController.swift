@@ -1,15 +1,16 @@
 //
 //  DiscoverdViewController.swift
-//  myToBeer
+//  ToBeer
 //
-//  Created by Himchan Park on 2018. 3. 24..
-//  Copyright © 2018년 Himchan Park. All rights reserved.
+//  Created by Seo JaeHyeong on 24/03/2018.
+//  Copyright © 2018 Seo Jaehyeong. All rights reserved.
 //
 
 import UIKit
+import BarcodeScanner
 
 class DiscoverdViewController: UIViewController {
-
+   
    
    @IBOutlet weak var beerImage: UIImageView!
    @IBOutlet weak var companyLb: UILabel!
@@ -25,37 +26,39 @@ class DiscoverdViewController: UIViewController {
    @IBOutlet weak var beerFeeling4_Lb: UILabel!
    @IBOutlet weak var beerFeeling5_Lb: UILabel!
    
-   private var barcode: String?
-   var db = Bear.shared
-    
-    var inputBarcode: String? {
-        willSet{
-            barcode = newValue
-        }
-    }
+   private var beerInfo: Beer?
    
-    //    bear.db.barcode : DB Barcode Infomation
-    override func viewDidLoad() {
+   var info: Beer? {
+      willSet{
+         beerInfo = newValue
+      }
+   }
+   
+   
+   override func viewDidLoad() {
       super.viewDidLoad()
       
-      let beer: BeerModel = db.getBeerModel(barcode: barcode!)
-      
-      beerImage.image = UIImage(named: beer.image)
-      companyLb.text = beer.company
-      beerNameLb.text = beer.name
-      beerTypeLb.text = beer.type
-      beerNationLb.text = beer.nation
-      beerAlcoholLb.text = beer.alcohol
-      beerDescriptionLb.text = beer.description
-      
-      var feeling: [UILabel] = [beerFeeling1_Lb,beerFeeling2_Lb,beerFeeling3_Lb,beerFeeling4_Lb,beerFeeling5_Lb]
-      
-      for (idx, feel) in beer.feeling.enumerated() {
-         feeling[idx].text = feel
+      if let beer = beerInfo {
+         beerImage.image = UIImage(named: beer.image)
+         companyLb.text = beer.company
+         beerNameLb.text = beer.name
+         beerTypeLb.text = beer.type
+         beerNationLb.text = beer.nation
+         beerAlcoholLb.text = beer.alcohol
+         beerDescriptionLb.text = beer.descrip
+         
+         var feeling: [UILabel] = [beerFeeling1_Lb,beerFeeling2_Lb,beerFeeling3_Lb,beerFeeling4_Lb,beerFeeling5_Lb]
+         
+         for (idx, feel) in beer.feeling.enumerated() {
+            feeling[idx].text = feel
+         }
       }
       
-    }
+   }
    
-
+   
+   @IBAction func handleScannerPresent(_ sender: UIButton) {
+      self.dismiss(animated: true, completion: nil)
+   }
    
 }

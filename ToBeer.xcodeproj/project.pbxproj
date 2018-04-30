@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDC44E934D77C97DC069C1E2 /* Pods_ToBeer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5DFA068468C3A56FE50CDB1 /* Pods_ToBeer.framework */; };
+		FE16A39120959883000B004A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE16A39020959883000B004A /* GoogleService-Info.plist */; };
+		FE16A3932096AB7C000B004A /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16A3922096AB7C000B004A /* Beer.swift */; };
 		FECC1EB9206541A600235CD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1EB8206541A600235CD7 /* AppDelegate.swift */; };
 		FECC1EBB206541A600235CD7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECC1EBA206541A600235CD7 /* MainViewController.swift */; };
 		FECC1EBE206541A600235CD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECC1EBC206541A600235CD7 /* Main.storyboard */; };
@@ -20,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28AD90ABF52D5AD58A286C43 /* Pods-ToBeer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToBeer.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToBeer/Pods-ToBeer.release.xcconfig"; sourceTree = "<group>"; };
+		5B264BB9D0CADB5B53D8090F /* Pods-ToBeer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToBeer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToBeer/Pods-ToBeer.debug.xcconfig"; sourceTree = "<group>"; };
+		E5DFA068468C3A56FE50CDB1 /* Pods_ToBeer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToBeer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE16A39020959883000B004A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE16A3922096AB7C000B004A /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		FECC1EB5206541A600235CD7 /* ToBeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToBeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FECC1EB8206541A600235CD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FECC1EBA206541A600235CD7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDC44E934D77C97DC069C1E2 /* Pods_ToBeer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A29CDE36A58B438480C9FD1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B264BB9D0CADB5B53D8090F /* Pods-ToBeer.debug.xcconfig */,
+				28AD90ABF52D5AD58A286C43 /* Pods-ToBeer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DBB428FFAD60EB8E207D754D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5DFA068468C3A56FE50CDB1 /* Pods_ToBeer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FECC1EAC206541A600235CD7 = {
 			isa = PBXGroup;
 			children = (
 				FECC1EB7206541A600235CD7 /* ToBeer */,
 				FECC1EB6206541A600235CD7 /* Products */,
+				A29CDE36A58B438480C9FD1F /* Pods */,
+				DBB428FFAD60EB8E207D754D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +98,7 @@
 				FECC1ED22065430C00235CD7 /* View */,
 				FECC1EBF206541A600235CD7 /* Assets.xcassets */,
 				FECC1EC4206541A600235CD7 /* Info.plist */,
+				FE16A39020959883000B004A /* GoogleService-Info.plist */,
 			);
 			path = ToBeer;
 			sourceTree = "<group>";
@@ -90,6 +119,7 @@
 				FECC1ECF206542F100235CD7 /* BeerModel.swift */,
 				FECC1ED42065592800235CD7 /* BearBase.swift */,
 				FECC1ED6206559CC00235CD7 /* Bear.swift */,
+				FE16A3922096AB7C000B004A /* Beer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FECC1EC7206541A600235CD7 /* Build configuration list for PBXNativeTarget "ToBeer" */;
 			buildPhases = (
+				E072190BCDE6D6F36DD9036C /* [CP] Check Pods Manifest.lock */,
 				FECC1EB1206541A600235CD7 /* Sources */,
 				FECC1EB2206541A600235CD7 /* Frameworks */,
 				FECC1EB3206541A600235CD7 /* Resources */,
+				A862813824908126A9BF16DF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE16A39120959883000B004A /* GoogleService-Info.plist in Resources */,
 				FECC1EC3206541A600235CD7 /* LaunchScreen.storyboard in Resources */,
 				FECC1EC0206541A600235CD7 /* Assets.xcassets in Resources */,
 				FECC1EBE206541A600235CD7 /* Main.storyboard in Resources */,
@@ -169,6 +202,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A862813824908126A9BF16DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ToBeer/Pods-ToBeer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToBeer/Pods-ToBeer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E072190BCDE6D6F36DD9036C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToBeer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FECC1EB1206541A600235CD7 /* Sources */ = {
@@ -178,6 +258,7 @@
 				FECC1ED52065592800235CD7 /* BearBase.swift in Sources */,
 				FECC1EBB206541A600235CD7 /* MainViewController.swift in Sources */,
 				FECC1EB9206541A600235CD7 /* AppDelegate.swift in Sources */,
+				FE16A3932096AB7C000B004A /* Beer.swift in Sources */,
 				FECC1ECD206542B000235CD7 /* DiscoverdViewController.swift in Sources */,
 				FECC1ED7206559CC00235CD7 /* Bear.swift in Sources */,
 				FECC1ED0206542F100235CD7 /* BeerModel.swift in Sources */,
@@ -316,10 +397,11 @@
 		};
 		FECC1EC8206541A600235CD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B264BB9D0CADB5B53D8090F /* Pods-ToBeer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 944595JNCH;
+				DEVELOPMENT_TEAM = E9R36XSN8N;
 				INFOPLIST_FILE = ToBeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;
@@ -331,10 +413,11 @@
 		};
 		FECC1EC9206541A600235CD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28AD90ABF52D5AD58A286C43 /* Pods-ToBeer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 944595JNCH;
+				DEVELOPMENT_TEAM = E9R36XSN8N;
 				INFOPLIST_FILE = ToBeer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seojaehyeong.ToBeer;

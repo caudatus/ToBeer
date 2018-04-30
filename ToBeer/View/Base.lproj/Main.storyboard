@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
-        </array>
-        <array key="TimesNewRomanBold.ttf">
-            <string>TimesNewRomanPS-BoldMT</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -49,8 +40,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="actionToBarcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNG-vY-WLQ"/>
-                                    <segue destination="LZQ-2m-9cH" kind="show" id="0R6-PO-fGX"/>
+                                    <action selector="handleScannerPresent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wiY-Rm-yTS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,41 +64,6 @@
             </objects>
             <point key="canvasLocation" x="586.95652173913049" y="32.608695652173914"/>
         </scene>
-        <!--Scan Bar Code View Controller-->
-        <scene sceneID="aX8-hC-pYP">
-            <objects>
-                <viewController id="LZQ-2m-9cH" customClass="ScanBarCodeViewController" customModule="ToBeer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="udf-ZV-5aM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t2N-Ym-mlz">
-                                <rect key="frame" x="141" y="330" width="128" height="192"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barcodeCameraImage" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-au-bkV">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="udf-ZV-5aM" secondAttribute="centerX" id="9WN-l3-uV9"/>
-                            <constraint firstItem="Zol-vb-xXd" firstAttribute="bottom" secondItem="4bh-au-bkV" secondAttribute="bottom" id="Jqv-mR-f9v"/>
-                            <constraint firstItem="Zol-vb-xXd" firstAttribute="trailing" secondItem="4bh-au-bkV" secondAttribute="trailing" id="bDL-RE-3a6"/>
-                            <constraint firstItem="4bh-au-bkV" firstAttribute="leading" secondItem="Zol-vb-xXd" secondAttribute="leading" id="gER-F9-pbo"/>
-                            <constraint firstItem="4bh-au-bkV" firstAttribute="top" secondItem="Zol-vb-xXd" secondAttribute="top" id="gyr-yZ-M5c"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Zol-vb-xXd"/>
-                    </view>
-                    <connections>
-                        <outlet property="barcodeView" destination="t2N-Ym-mlz" id="jR2-JZ-On8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SfG-8a-WuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1430.4347826086957" y="33.423913043478265"/>
-        </scene>
         <!--Discoverd View Controller-->
         <scene sceneID="Gvl-2L-Hs8">
             <objects>
@@ -130,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="기린 이치방" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCt-YT-iEr">
-                                <rect key="frame" x="30" y="323" width="354" height="31.666666666666686"/>
+                                <rect key="frame" x="30" y="323" width="354" height="31.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -158,13 +113,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일본 🇯🇵" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipd-W7-pnm">
-                                <rect key="frame" x="123" y="405.33333333333331" width="218" height="24"/>
+                                <rect key="frame" x="123" y="403" width="218" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.9%" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtM-iI-KQM">
-                                <rect key="frame" x="123" y="436.33333333333331" width="218" height="24"/>
+                                <rect key="frame" x="123" y="434" width="218" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -224,7 +179,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="기린 이치방은 첫 번째 맥즙만을 사용하여 보리 본연의 진한 맛을 충분히 느낄 수 있고, 깔끔한 맛이 특징이다." translatesAutoresizingMaskIntoConstraints="NO" id="nIt-9K-EmK">
-                                <rect key="frame" x="123" y="467.33333333333326" width="218" height="92"/>
+                                <rect key="frame" x="123" y="458" width="218" height="92"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="mlX-Jf-XlT"/>
@@ -246,7 +201,7 @@
                                 </constraints>
                                 <state key="normal" image="ffd479-barcode-256"/>
                                 <connections>
-                                    <segue destination="LZQ-2m-9cH" kind="show" id="bpt-NR-CQu"/>
+                                    <action selector="handleScannerPresent:" destination="Zqp-jU-Dkd" eventType="touchUpInside" id="cU5-pi-51Q"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -261,13 +216,13 @@
                             <constraint firstItem="Vrh-Un-zfR" firstAttribute="top" secondItem="WiL-v5-aOX" secondAttribute="bottom" constant="68" id="95w-eD-HS1"/>
                             <constraint firstItem="WiL-v5-aOX" firstAttribute="top" secondItem="RfX-qO-cZl" secondAttribute="top" id="9fB-Lq-FMT"/>
                             <constraint firstItem="Ueh-mI-KYL" firstAttribute="leading" secondItem="RfX-qO-cZl" secondAttribute="leading" constant="73" id="CWp-Sv-UU2"/>
-                            <constraint firstItem="nIt-9K-EmK" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="70.333333333333314" id="FdM-ka-WRy"/>
+                            <constraint firstItem="nIt-9K-EmK" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="61" id="FdM-ka-WRy"/>
                             <constraint firstItem="Ueh-mI-KYL" firstAttribute="top" secondItem="WiL-v5-aOX" secondAttribute="bottom" constant="269" id="Hnp-TA-M4a"/>
                             <constraint firstItem="aOe-Ba-g8L" firstAttribute="leading" secondItem="RfX-qO-cZl" secondAttribute="leading" constant="73" id="HsE-jr-bQz"/>
                             <constraint firstItem="EZq-4U-TdL" firstAttribute="trailing" secondItem="aOe-Ba-g8L" secondAttribute="trailing" id="KOr-VZ-u9h"/>
                             <constraint firstItem="WiL-v5-aOX" firstAttribute="leading" secondItem="RfX-qO-cZl" secondAttribute="leading" constant="124" id="MNg-OO-xdE"/>
                             <constraint firstItem="EZq-4U-TdL" firstAttribute="top" secondItem="aOe-Ba-g8L" secondAttribute="bottom" constant="70" id="MT9-cH-Vkq"/>
-                            <constraint firstItem="RtM-iI-KQM" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="39.333333333333314" id="PTq-sw-dFx"/>
+                            <constraint firstItem="RtM-iI-KQM" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="37" id="PTq-sw-dFx"/>
                             <constraint firstItem="7tg-Wo-aog" firstAttribute="top" secondItem="aOe-Ba-g8L" secondAttribute="bottom" constant="8" id="Qs5-T1-GpC"/>
                             <constraint firstItem="aOe-Ba-g8L" firstAttribute="top" secondItem="Vrh-Un-zfR" secondAttribute="bottom" constant="13" id="RDs-hQ-Z0f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Vrh-Un-zfR" secondAttribute="trailing" constant="53" id="RaA-41-E6W"/>
@@ -282,7 +237,7 @@
                             <constraint firstItem="ipd-W7-pnm" firstAttribute="leading" secondItem="qU8-hL-Iv4" secondAttribute="leading" id="hTk-qP-rwI"/>
                             <constraint firstItem="7tg-Wo-aog" firstAttribute="leading" secondItem="aOe-Ba-g8L" secondAttribute="leading" id="hiF-Xq-r2u"/>
                             <constraint firstItem="RCT-NA-eTb" firstAttribute="top" secondItem="RfX-qO-cZl" secondAttribute="top" id="i5M-ys-fow"/>
-                            <constraint firstItem="ipd-W7-pnm" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="8.3333333333333144" id="jfp-wz-CP7"/>
+                            <constraint firstItem="ipd-W7-pnm" firstAttribute="top" secondItem="qU8-hL-Iv4" secondAttribute="bottom" constant="6" id="jfp-wz-CP7"/>
                             <constraint firstItem="RfX-qO-cZl" firstAttribute="bottom" secondItem="Ueh-mI-KYL" secondAttribute="bottom" constant="20" id="km1-ZS-kqN"/>
                             <constraint firstItem="ran-lJ-Pli" firstAttribute="top" secondItem="aOe-Ba-g8L" secondAttribute="bottom" constant="39" id="lKD-jB-dzI"/>
                             <constraint firstItem="qU8-hL-Iv4" firstAttribute="top" secondItem="Vrh-Un-zfR" secondAttribute="bottom" constant="14" id="m2s-ji-b8t"/>
@@ -313,17 +268,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lw8-8n-R0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="32"/>
+            <point key="canvasLocation" x="1442" y="33"/>
         </scene>
     </scenes>
     <resources>
-        <image name="barcodeCameraImage" width="207" height="368"/>
         <image name="ffd479-barcode-256" width="85" height="85"/>
         <image name="homeImage" width="1813" height="1209"/>
         <image name="sampleBeer" width="190" height="348"/>
         <image name="white-barcode-256" width="85" height="85"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bpt-NR-CQu"/>
-    </inferredMetricsTieBreakers>
 </document>
