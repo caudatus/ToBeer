@@ -27,7 +27,9 @@ class MainViewController: UIViewController {
    
    @IBAction func handleScannerPresent(_ sender: UIButton) {
       let viewController = makeBarcodeScannerViewController()
-      viewController.title = "ToBeer Scanner"
+      viewController.cameraViewController.showsCameraButton = true
+      viewController.headerViewController.titleLabel.text = "ToBeer Scanner"
+      viewController.headerViewController.closeButton.tintColor = .red
       
       present(viewController, animated: true, completion: nil)
    }
