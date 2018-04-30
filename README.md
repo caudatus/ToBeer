@@ -6,14 +6,11 @@
 - BarcodeScanner
 
 ## 메인, 검색
-<img src="/images/main.png" width="200px">
-<img src="/images/searching.png" width="200px">
-<img src="/images/noresult.png" width="200px">
+<img src="/images/main.png" width="200px"><img src="/images/searching.png" width="200px"><img src="/images/noresult.png" width="200px">
 
 <br/>
 
 ## 카메라, 결과
-<img src="/images/cameraview.png" width="200px">
-<img src="/images/result.png" width="200px">
+<img src="/images/cameraview.png" width="200px"><img src="/images/result.png" width="200px">
 
 <br/>
